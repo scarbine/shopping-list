@@ -121,6 +121,8 @@ const newFoodItems =[
 
 // console.log(newFoodItems)
 
+// This function adds new items from a new list array to the shopping list
+
 for (const food of newFoodItems) {
 
     const addToShoppingList = (arr) => {
@@ -148,4 +150,3 @@ for (const food of newFoodItems) {
 }
 
 console.log(shoppingList)
-git 
