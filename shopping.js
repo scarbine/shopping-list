@@ -40,7 +40,7 @@ const shoppingList = [
 // console.log(shoppingList)
 
 
-// This function adds new list items to the shopping list
+// This function adds new list item to the shopping list
 const currentDate = new Date(); 
 const dateTime =  (currentDate.getMonth()+1)  + "/"
                 + currentDate.getDate()  + "/" 
@@ -52,7 +52,7 @@ const dateTime =  (currentDate.getMonth()+1)  + "/"
 
 // console.log(dateTime)
 
-// const newFoodItems =[
+// const newFooditem =[
     
 //     {
 //         name: "Apples",
@@ -150,3 +150,14 @@ for (const food of newFoodItems) {
 }
 
 console.log(shoppingList)
+
+
+// This function filters the grocery list and displays items that are more than $8
+const highPriceItems = []
+
+for (const item of shoppingList )
+    if (item.price > 8) {
+         highPriceItems.push(item)
+    }
+
+console.log(highPriceItems)
